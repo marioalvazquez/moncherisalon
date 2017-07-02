@@ -13,3 +13,24 @@ i {
 p a {
   color: #F5F5F5;
   text-decoration: none; }
+
+.header-banner {
+  max-height: 680px;
+  background: url("../img/banner3.jpg");
+  background-size: cover; }
+  .header-banner .row {
+    margin-bottom: 0; }
+  .header-banner .s12 .h2 {
+    font-size: 2.5rem;
+    color: #FFF; }
+  .header-banner .h3 {
+    color: #FFF;
+    letter-spacing: 3px;
+    font-size: 2rem; }
+  .header-banner p.h1 span {
+    font-size: 5rem;
+    letter-spacing: 10px;
+    font-weight: bold;
+    color: #FFF;
+    background: rgba(156, 39, 176, 0.7);
+    font-weight: 900; }
