@@ -34,3 +34,10 @@ p a {
     color: #FFF;
     background: rgba(156, 39, 176, 0.7);
     font-weight: 900; }
+
+.active {
+  color: #e1bee7 !important; }
+
+input:focus {
+  border-bottom-color: #e1bee7 !important;
+  box-shadow: 0 1px 0 0 #e1bee7 !important; }
