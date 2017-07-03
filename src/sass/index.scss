@@ -56,7 +56,104 @@ p a{
 .active{
   color: $light-primary !important;
 }
-input:focus{
+input:focus, textarea:focus{
   border-bottom-color: $light-primary !important;
   box-shadow: 0 1px 0 0 $light-primary !important;
+}
+
+
+
+/*Services card*/
+.hair{
+  background: url('../img/hair.jpg') !important;
+  background-size: cover !important;
+  background-position: 50% !important;
+}
+.color{
+  background: url('../img/color.jpg') !important;
+  background-size: cover !important;
+  background-position: 50% !important;
+}
+
+.treatment{
+  background: url('../img/treatment.jpg') !important;
+  background-size: cover !important;
+  background-position: 50% !important;
+}
+
+.nails{
+  background: url('../img/nails.jpg') !important;
+  background-size: cover !important;
+  background-position: 50% !important;
+}
+
+.facial{
+  background: url('../img/facial.jpg') !important;
+  background-size: cover !important;
+  background-position: 50% !important;
+}
+
+.make-up{
+  background: url('../img/makeup.jpg') !important;
+  background-size: cover !important;
+  background-position: 50% !important;
+}
+
+.waxing{
+  background: url('../img/waxing.jpg') !important;
+  background-size: cover !important;
+  background-position: 50% !important;
+}
+
+.others{
+  background: url('../img/others.jpg') !important;
+  background-size: cover !important;
+  background-position: 50% !important;
+}
+
+.services-card{
+  min-height: 20rem;
+  background: url('../img/treatment.jpg');
+  background-size: cover;
+  background-position: 50%;
+  .title{
+    font-size: 1.5rem;
+    color: $text-icons;
+    letter-spacing: .3rem;
+    font-weight: bolder;
+  }
+  .services-detail{
+    text-align: center;
+    p{
+      color: $text-icons;
+      letter-spacing: 5px;
+      font-size: 1rem;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.promotions{
+  .promotions-title{
+    span{
+      border-bottom: 5px solid $light-primary;
+    }
+  }
+}
+
+.summer-beauty{
+  background: url('../img/column.png');
+  background-position: right top;
+  background-size: cover;
+  min-height: 480px;
+  p span{
+    font-size:5rem;
+    letter-spacing: 10px;
+    font-weight: bold;
+    color: $text-icons;
+    background: transparentize($primary-color, .3);
+    font-weight: 900;
+  }
 }
