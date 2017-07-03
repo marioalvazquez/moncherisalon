@@ -1,4 +1,5 @@
 $(document).ready(() => {
+  toggleServices();
   servicesHeight();
   $('.tooltipped').tooltip({delay: 50});
 
@@ -28,5 +29,17 @@ function servicesHeight() {
     heights.push($(cards[i]).height());
   }
   $(cards).height(Math.max(...heights));
+  $('.services-detail').hide();
   console.log(heights);
 }
+
+function toggleServices() {
+  $('.services-card').hover(
+    function () {
+      $(this).find('.services-detail').fadeIn();
+    },
+    function () {
+      $(this).find('.services-detail').fadeOut();
+    }
+  )
+};
