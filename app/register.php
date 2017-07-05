@@ -20,12 +20,14 @@
   }
 
 $header = "From: MonCheri <contacto@moncheribeautysalon.com>\r\n";
+$header .= "MIME-Version: 1.0\r\n";
+$header .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
   mail("marioal.vazquez@gmail.com",
    "Nueva agenda para Mon Cheri",
    "Nombre: $name.\n Día: $date a las $time\n Servicios: $services\n Teléfono: $phone\n Correo: $mail", $header);
 
-$message = '<DOCTYPE html><html><head><style>';
+$message = '<!DOCTYPE html><html><head><style>';
 $message .= '.container{margin:2rem;padding:2rem;text-align:center;';
 $message .= 'border-radius:10px; border: 1px solid #e1bee7}';
 $message .= '</style></head>';
