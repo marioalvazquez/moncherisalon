@@ -28,10 +28,12 @@ $header .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
    "Nombre: $name.\n Día: $date a las $time\n Servicios: $services\n Teléfono: $phone\n Correo: $mail", $header);
 
 $message = '<!DOCTYPE html><html><head><style>';
-$message .= '.container{margin:2rem;padding:2rem;text-align:center;';
-$message .= 'border-radius:10px; border: 1px solid #e1bee7}';
+$message .= '.container{margin:2rem;padding:2rem;background:#9c27b0;';
+$message .= 'box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);';
+$message .= 'color:#e1bee7}h2{text-align:center; font-size:30px;color: #FFF}';
 $message .= '</style></head>';
-$message .= '<body><div class="container"><h2>Agendamos exitosamente tu cita</h2>';
+$message .= '<body><div class="container"><h2>Agendamos exitosamente tu cita';
+$message .= 'en Mon Cheri</h2>'
 $message .= "<p>Fecha: $date, Hora: $time</p>";
 $message .= "<p>Servicios: $services</p>";
 $message .= "<p>No olvides presentarte 10 minutos antes de tu cita.</p>";
