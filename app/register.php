@@ -13,9 +13,9 @@
   $resultado = $connect->query($query);
 
   if ($resultado) {
-    echo 1;
+    echo "1";
   }
   else{
-    echo 0;
+    echo "0";
   }
  ?>

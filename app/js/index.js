@@ -130,7 +130,7 @@ function validateForm() {
     data: ($('form').serialize()),
     succes: (data) =>{
         $('.preloader-wrapper').hide();
-      if (data == 1) {
+      if (data == "1") {
         $('p.form-result-message').text("Registro exitoso, te esperamos en Mon Cheri el día de tu cita");
       }
       else{
