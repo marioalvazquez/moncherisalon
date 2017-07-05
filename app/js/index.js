@@ -136,6 +136,7 @@ function validateForm() {
       else{
         $('p.form-result-message').text("Algo salió mal, vuele a intentar más tarde");
       }
+      $('.accept-button').show();
     },
     fail: data =>{
       $('p.form-result-message').text("Algo salió mal, vuele a intentar más tarde");
