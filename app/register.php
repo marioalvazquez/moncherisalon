@@ -29,8 +29,8 @@ $header .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
 $message = '<!DOCTYPE html><html><head><style>';
 $message .= '.container{margin:2rem;padding:2rem;background:#9c27b0;';
-$message .= 'box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);';
-$message .= 'color:#e1bee7}h2{text-align:center; font-size:30px;color: #FFF}';
+$message .= 'box-shadow: 0 10px 20px rgba(0,0,0,0.19);';
+$message .= 'color:#e1bee7;}h2{text-align:center; font-size:20px;color: #FFF}';
 $message .= '</style></head>';
 $message .= '<body><div class="container"><h2>Agendamos exitosamente tu cita';
 $message .= 'en Mon Cheri</h2>'
