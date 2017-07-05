@@ -52,7 +52,7 @@ function validateForm() {
   const phone = $('input[name="phone"]').val();
   const date = $('input[name="date"]').val();
   const time = $('input[name="time"]').val();
-  const services = $('input[name="services"]').val();
+  const services = $('textarea[name="services"]').val();
   const err = $('p.error-form');
 
   if (name == "" || name.length < 2) {
@@ -117,8 +117,28 @@ function validateForm() {
   }
   $(err).text("");
 
-  if (services.length < 5) {
+  if (services.length < 3) {
     $(err).text("Llena los servicios correctamente");
     return false;
   }
+
+  $('#modalForm').modal('open');
+
+  $.ajax({
+    type: "POST",
+    url: "register.php",
+    data: ($('form').serialize()),
+    succes: (data) =>{
+        $('.preloader-wrapper').hide();
+      if (data == 1) {
+        $('p.form-result-message').text("Registro exitoso, te esperamos en Mon Cheri el día de tu cita");
+      }
+      else{
+        $('p.form-result-message').text("Algo salió mal, vuele a intentar más tarde");
+      }
+    },
+    fail: (data) =>{
+      $('p.form-result-message').text("Algo salió mal, vuele a intentar más tarde");
+    }
+  })
 }
