@@ -128,7 +128,7 @@ function validateForm() {
     type: "POST",
     url: "register.php",
     data: ($('form').serialize()),
-    succes: (data) =>{
+    success: data =>{
         $('.preloader-wrapper').hide();
       if (data == "1") {
         $('p.form-result-message').text("Registro exitoso, te esperamos en Mon Cheri el día de tu cita");
@@ -137,7 +137,7 @@ function validateForm() {
         $('p.form-result-message').text("Algo salió mal, vuele a intentar más tarde");
       }
     },
-    fail: (data) =>{
+    fail: data =>{
       $('p.form-result-message').text("Algo salió mal, vuele a intentar más tarde");
     }
   })
