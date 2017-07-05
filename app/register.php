@@ -19,11 +19,11 @@
     echo "0";
   }
 
-
+$header = "From: MonCheri <contacto@moncheri.com>\r\n";
 
   mail("marioal.vazquez@gmail.com",
    "Nueva agenda para Mon Cheri",
-   "Nombre: $name.\n Día: $date a las $time\n Servicios: $services\n Teléfono: $phone\n Correo: $mail");
+   "Nombre: $name.\n Día: $date a las $time\n Servicios: $services\n Teléfono: $phone\n Correo: $mail", $header);
 
 
  ?>
