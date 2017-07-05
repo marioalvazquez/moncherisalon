@@ -26,7 +26,7 @@
     $message .= 'color:#e1bee7;}h2{text-align:center; font-size:20px;color: #FFF}';
     $message .= '</style></head>';
     $message .= '<body><div class="container"><h2>Agendamos exitosamente tu cita';
-    $message .= 'en Mon Cheri</h2>'
+    $message .= 'en Mon Cheri</h2>';
     $message .= "<p>Fecha: $date, Hora: $time</p>";
     $message .= "<p>Servicios: $services</p>";
     $message .= "<p>No olvides presentarte 10 minutos antes de tu cita.</p>";
