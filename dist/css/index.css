@@ -1,3 +1,9 @@
+* {
+  outline: none !important; }
+
+table.highlight > tbody > tr:hover {
+  background-color: #e1bee7 !important; }
+
 nav {
   background: #9c27b0; }
 

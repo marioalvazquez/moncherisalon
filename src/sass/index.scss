@@ -6,6 +6,13 @@ $accent: #7c4dff;
 $primary-text: #212121;
 $secondary-text: #757575;
 $divider: #BDBDBD;
+
+*{
+  outline: none !important;
+}
+table.highlight>tbody>tr:hover{
+  background-color: $light-primary !important;
+}
 nav{
   background: $primary-color;
 }

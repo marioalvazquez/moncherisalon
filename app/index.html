@@ -15,9 +15,9 @@
             <div class="nav-wrapper">
               <a href="#!" class="brand-logo">MON CHERI BEAUTY SALON</a>
               <ul class="right hide-on-med-and-down">
-                <li><a href="sass.html">Servicios</a></li>
-                <li><a href="badges.html">Promociones</a></li>
-                <li><a href="badges.html">Paquetes</a></li>
+                <li><a href="#services" class="scroll">Servicios</a></li>
+                <li><a href="#promotions" class="scroll">Promociones</a></li>
+                <li><a href="#packages" class="scroll">Paquetes</a></li>
               </ul>
             </div>
           </nav>
@@ -29,14 +29,14 @@
                 <p class="h2 center-align">¡Oferta de Verano!</p>
                 <p class="h1 center-align"><span>#SUMMER BEAUTY</span></p>
                 <p class="h3 center-align">Agenda 2 servicios... y te regalamos el de menor precio!</p>
-                <p class="center-align"><a href="#" class="waves-effect waves-light btn deep-purple accent-2"> <i class="material-icons right">send</i>Haz tu cita</a></p>
+                <p class="center-align"><a href="#appointment-form" class="waves-effect waves-light btn deep-purple accent-2 scroll"> <i class="material-icons right">send</i>Haz tu cita</a></p>
               </div>
             </div>
           </div>
         </div>
     </header>
     <main>
-      <div class="row services">
+      <div class="row services" id="services">
         <div class="services-card col s12 m6 l3 hair">
           <p class="center-align title">CABELLO</p>
           <div class="services-detail">
@@ -129,7 +129,7 @@
         </div>
       </div>
 <div class="container">
-  <div class="row promotions">
+  <div class="row promotions" id="promotions">
     <div class="col s12">
       <h2 class="center-align">
         PROMOCIONES DEL MES
@@ -181,6 +181,68 @@
       </ul>
     </div>
   </div>
+  <div class="row" id="packages">
+    <div class="col s12">
+      <table class="responsive-table highlight stripped">
+        <thead>
+          <tr>
+              <th>Paquetes</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Paquete A</td>
+            <td>Maquillaje, Pestañas y Ondas $550.00</td>
+          </tr>
+          <tr>
+            <td>Paquete B</td>
+            <td>Maquillaje, Pestañas y Semirecogido $600.00</td>
+          </tr>
+          <tr>
+            <td>Paquete C</td>
+            <td>Facial y Maquillaje $600.00</td>
+          </tr>
+          <tr>
+            <td>Paquete D</td>
+            <td>Facial, Maquillaje y Peinado $750.00</td>
+          </tr>
+          <tr>
+            <td>Paquete E</td>
+            <td>Maquillaje y Manicure Express $600.00</td>
+          </tr>
+          <tr>
+            <td>Paquete F</td>
+            <td>Maquillaje, Manicure y Pedicure $750.00</td>
+          </tr>
+          <tr>
+            <td>Paquete G</td>
+            <td>Maquillaje y Peinado Sencillo $500.00</td>
+          </tr>
+          <tr>
+            <td>Paquete H</td>
+            <td>Peinado, Manicure y Pedicure $500.00</td>
+          </tr>
+          <tr>
+            <td>Paquete I</td>
+            <td>Facial, Manicure y Pedicure $500.00</td>
+          </tr>
+          <tr>
+            <td>Paquete J</td>
+            <td>Maquillaje, Peinado, Manicure, Pedicure y Facial $950.00</td>
+          </tr>
+          <tr>
+            <td>Paquete K</td>
+            <td>Maquillaje, Depilación y Peinado $700.00</td>
+          </tr>
+          <tr>
+            <td>Paquete L</td>
+            <td>Depilación, Manicure y Pedicure $550.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>
   <div class="row summer-beauty">
     <div class="col s12 m8">
@@ -188,7 +250,7 @@
       <p class="text">Aprovecha nuestra oferta de verano, summer beauty.</p>
       <p class="text">Agenda dos servicios con nosotros y el segundo es totalmente gratis</p>
       <p class="text">Haz válida la promoción agendando una cita en línea</p>
-        <a href="#" class="waves-effect waves-light btn deep-purple accent-2"><i class="material-icons right">send</i>Haz tu cita</a>
+        <a href="#appointment-form" class="waves-effect waves-light btn deep-purple accent-2 scroll"><i class="material-icons right">send</i>Haz tu cita</a>
         <a href="#modal1" class="terms-link">Términos y condiciones</a>
 
  <!-- Modal Structure -->
@@ -249,27 +311,41 @@
         </form>
       </div>
     </div>
-  </div>
-  <div id="modalForm" class="modal">
-    <div class="modal-content" style="text-align:center;">
-      <h4>Enviando Datos</h4>
-      <div class="preloader-wrapper big active">
-    <div class="spinner-layer spinner-blue-only">
-      <div class="circle-clipper left">
-        <div class="circle"></div>
-      </div><div class="gap-patch">
-        <div class="circle"></div>
-      </div><div class="circle-clipper right">
-        <div class="circle"></div>
+    <div id="modalForm" class="modal">
+      <div class="modal-content" style="text-align:center;">
+        <h4>Enviando Datos</h4>
+        <div class="preloader-wrapper big active">
+      <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+    <p class="form-result-message"></p>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat accept-button" style="display:none;">Aceptar</a>
       </div>
     </div>
   </div>
-  <p class="form-result-message"></p>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat accept-button" style="display:none;">Aceptar</a>
+  </div>
+  <div class="container">
+    <div class="row valign-wrapper">
+      <div class="col s12 m4">
+        <img src="img/mac.png" alt="MAC Cosmetics" style="width:100%">
+      </div>
+      <div class="col s12 m4">
+        <img src="img/loreal.png" alt="Loreal" style="width:100%">
+      </div>
+      <div class="col s12 m4">
+        <img src="img/salerm.png" alt="Salerm" style="width:100%">
+      </div>
     </div>
   </div>
-</div>
+</main>
     <footer class="page-footer">
           <div class="container">
             <div class="row">
