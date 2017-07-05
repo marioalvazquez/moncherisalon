@@ -2,11 +2,11 @@
   include("connection.php");
 
   $name = $_POST['name'];
-  $mail = $POST['mail'];
-  $phone = $POST['phone'];
-  $date = $POST['date'];
-  $time = $POST['time'];
-  $services = $POST['services'];
+  $mail = $_POST['mail'];
+  $phone = $_POST['phone'];
+  $date = $_POST['date'];
+  $time = $_POST['time'];
+  $services = $_POST['services'];
 
   $query = "INSERT INTO Appointment(Name, Mail, Phone, Dates, Times, Services) VALUES('$name', '$mail', '$phone', '$date', '$time', '$services')";
 
