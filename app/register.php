@@ -8,12 +8,10 @@
   $time = $POST['time'];
   $services = $POST['services'];
 
-  $query = "INSERT INTO Appointment(Name, Mail, Phone, Date, Time, Services) VALUES('$name', '$mail', '$phone', '$date', '$time', '$services')";
-
-  $queryCustomer = "INSERT INTO Customer(Name, Mail, Phone) VALUES ('$name', '$mail', '$phone')";
+  $query = "INSERT INTO Appointment(Name, Mail, Phone, Dates, Times, Services) VALUES('$name', '$mail', '$phone', '$date', '$time', '$services')";
 
   $resultado = $connect->query($query);
-  $resultado2 = $connect->query($queryCustomer);
+
   if ($resultado) {
     echo 1;
   }
