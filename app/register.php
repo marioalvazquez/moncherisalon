@@ -18,4 +18,12 @@
   else{
     echo "0";
   }
+
+
+
+  mail("marioal.vazquez@gmail.com",
+   "Nueva agenda para Mon Cheri",
+   "Nombre: $name.\n Día: $date a las $time\n Servicios: $services\n Teléfono: $phone\n Correo: $mail");
+
+
  ?>
