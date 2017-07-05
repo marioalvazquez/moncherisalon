@@ -10,6 +10,9 @@
 
   $query = "INSERT INTO Appointment(Name, Mail, Phone, Dates, Times, Services) VALUES('$name', '$mail', '$phone', '$date', '$time', '$services')";
 
+  $registerClient = 'INSERT INTO Customer(Name, Mail, Phone) VALUES ('$name', '$mail', "$phone")';
+  $connect->query($registerClient);
+
   $resultado = $connect->query($query);
 
   if ($resultado) {
