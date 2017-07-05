@@ -16,6 +16,6 @@
     echo "1";
   }
   else{
-    echo "0";
+    echo 'Error: ' $connect->error;
   }
  ?>
