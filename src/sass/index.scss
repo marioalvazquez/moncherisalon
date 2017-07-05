@@ -141,6 +141,10 @@ input:focus, textarea:focus{
       border-bottom: 5px solid $light-primary;
     }
   }
+  li{
+    line-height: 3rem;
+    text-align: center;
+  }
 }
 
 .summer-beauty{
@@ -148,6 +152,10 @@ input:focus, textarea:focus{
   background-position: right top;
   background-size: cover;
   min-height: 480px;
+  .text{
+    color: $secondary-text;
+    font-size: 1.5rem;
+  }
   p span{
     font-size:5rem;
     letter-spacing: 10px;
@@ -156,4 +164,14 @@ input:focus, textarea:focus{
     background: transparentize($primary-color, .3);
     font-weight: 900;
   }
+}
+.terms-link{
+  color: $light-primary;
+}
+
+.picker__date-display{
+  background: $primary-color;
+}
+.picker__day--selected{
+  background: $primary-color !important;
 }

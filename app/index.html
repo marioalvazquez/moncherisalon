@@ -185,45 +185,66 @@
   <div class="row summer-beauty">
     <div class="col s12 m8">
       <p class="h1 left-align"><span>#SUMMER BEAUTY</span></p>
-      <p>Aprovecha nuestra oferta de verano, summer beauty.</p>
-      <p>Agenda dos sericios con nosotros y el segundo es totalemnte gratis</p>
-      <p>Promoción válida del 1 al 15 de julio de 2017</p>
+      <p class="text">Aprovecha nuestra oferta de verano, summer beauty.</p>
+      <p class="text">Agenda dos servicios con nosotros y el segundo es totalmente gratis</p>
+      <p class="text">Haz válida la promoción agendando una cita en línea</p>
+        <a href="#" class="waves-effect waves-light btn deep-purple accent-2"><i class="material-icons right">send</i>Haz tu cita</a>
+        <a href="#modal1" class="terms-link">Términos y condiciones</a>
+
+ <!-- Modal Structure -->
+ <div id="modal1" class="modal bottom-sheet">
+   <div class="modal-content">
+     <h4>Términos y Condiciones</h4>
+     <ul>
+       <li>Promoción válida del 1 al 15 de Julio</li>
+       <li>No aplica con otras promociones</li>
+       <li>Válido sólo con cita por internet o presentando volante promocional</li>
+       <li>Sólo una promoción por persona</li>
+       <li>Los servicios deberán agendarse para el mismo día</li>
+     </ul>
+   </div>
+   <div class="modal-footer">
+     <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Aceptar</a>
+   </div>
+ </div>
+
     </div>
   </div>
   <div class="container">
       <div class="row appointment">
-        <form class="appointment-form" action="new-appointment.php" method="post">
+        <form class="appointment-form" action="new-appointment.php" method="post" id="appointment-form">
           <div class="input-field col s12">
               <i class="material-icons prefix">account_circle</i>
-              <input id="icon_prefix" type="email" type="text" class="validate">
+              <input id="icon_prefix" type="text"  class="validate" name="name" required>
               <label for="icon_prefix">Nombre</label>
           </div>
           <div class="input-field col s12">
               <i class="material-icons prefix">mail</i>
-              <input id="icon_prefix" type="email" type="text" class="validate">
+              <input id="icon_prefix" type="email" type="text" class="validate" name="mail" required>
               <label for="icon_prefix">Correo Electronico</label>
           </div>
           <div class="input-field col s12">
               <i class="material-icons prefix">phone</i>
-              <input id="icon_prefix" type="tel" class="validate">
-              <label for="icon_prefix">Teléfono</label>
+              <input id="icon_prefix" type="tel" class="validate" name="phone" required>
+              <label for="icon_prefix">Teléfono (10 dígitos)</label>
           </div>
           <div class="col s12">
             <label for="appointment-date"><i class="material-icons">schedule</i> Fecha y Hora de Cita</label>
           </div>
           <div class="input-field col s6">
-            <input type="date" class="datepicker">
+            <input type="date" class="datepicker" name="date" required>
           </div>
           <div class="input-field col s6">
-            <input type="text" class="timepicker">
+            <input type="text" class="timepicker" name="time" required>
           </div>
           <div class="input-field col s12">
             <i class="material-icons prefix">mode_edit</i>
-            <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+            <textarea id="icon_prefix2" class="materialize-textarea services-form" name="services" required></textarea>
             <label for="icon_prefix2">Servicios</label>
           </div>
           <div class="col s12">
-            <p class="right-align"><a href="#" class="waves-effect waves-light btn deep-purple accent-2"> <i class="material-icons right">send</i>Agendar</a></p>
+            <p class="right-align"><a onclick="return validateForm()" class="waves-effect waves-light btn deep-purple accent-2"> <i class="material-icons right">send</i>Agendar</a></p>
+            <p class="error-form center-align"></p>
           </p>
         </form>
       </div>
@@ -238,7 +259,7 @@
                 <p class="grey-text text-lighten-4"><i class="material-icons">room</i> <a href="https://www.google.com.mx/maps/place/Prol.+Gral.+Ignacio+Zaragoza+205a,+Jardines+de+la+Concepci%C3%B3n+II,+20120+Aguascalientes,+Ags./@21.9233672,-102.3050702,19z/data=!3m1!4b1!4m5!3m4!1s0x8429ef06c69ddc79:0x946a0d5df747b059!8m2!3d21.9233672!4d-102.304523" target="_blank">Av. Prolongación Zaragoza 203-B, Jardines de la Concepción II Sección</a></p>
                 <p class="grey-text text-lighten-4"><i class="material-icons">schedule</i> Martes a Viernes 10:00 a.m a 2:00 p.m y 4:00 p.m a 8:00 p.m Sábado 11:00 a.m a 5:00 p.m </p>
                 <p class="grey-text text-lighten-4"><i class="material-icons">mail</i> <a href="mailto:contacto@moncheribeautysalon.com">contacto@moncheribeautysalon.com</a> </p>
-                <p class="grey-text text-lighten-4"><i class="icon ion-social-facebook"></i> salondebellezamoncheri</p>
+                <p class="grey-text text-lighten-4"><i class="icon ion-social-facebook"></i> <a href="https://www.facebook.com/salondebellezamoncheri" target="_blank">salondebellezamoncheri</a></p>
               </div>
               <div class="col l4 offset-l2 s12">
               </div>

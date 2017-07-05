@@ -105,11 +105,18 @@ input:focus, textarea:focus {
 .promotions .promotions-title span {
   border-bottom: 5px solid #e1bee7; }
 
+.promotions li {
+  line-height: 3rem;
+  text-align: center; }
+
 .summer-beauty {
   background: url("../img/column.png");
   background-position: right top;
   background-size: cover;
   min-height: 480px; }
+  .summer-beauty .text {
+    color: #757575;
+    font-size: 1.5rem; }
   .summer-beauty p span {
     font-size: 5rem;
     letter-spacing: 10px;
@@ -117,3 +124,12 @@ input:focus, textarea:focus {
     color: #FFF;
     background: rgba(156, 39, 176, 0.7);
     font-weight: 900; }
+
+.terms-link {
+  color: #e1bee7; }
+
+.picker__date-display {
+  background: #9c27b0; }
+
+.picker__day--selected {
+  background: #9c27b0 !important; }
